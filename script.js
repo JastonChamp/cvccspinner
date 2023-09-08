@@ -1,7 +1,18 @@
 const wheel = document.querySelector('.wheel');
 const cvccWords = [
-  'bend', 'fast', 'milk', 'jump', 'sink', 'wind', 'lost', 'sand', 'melt',
-  // ... (add more CVCC words here)
+   'bend', 'milk', 'jump', 'sink', 'wind', 'lost', 'sand', 'melt',
+  'lamp', 'belt', 'gulp', 'band', 'limp', 'pink', 'wing',
+  'pond', 'rust', 'vest',  'bolt', 'clap', 'drag', 'fist', 'golf',
+  'hunt', 'junk', 'kept', 'lend', 'musk', 'nest', 'pint', 'ramp', 
+  'tent', 'wilt',  'zest', 'bulk', 'chip', 'dock', 'funk', 'grip',
+  'hulk', 'inch', 'jolt',  'lump', 'mint', 'neck',  'pump',
+  'rack', 'slip', 'tick', 'volt',  'yolk', 'clot',
+  'drip', 'flap', 'grid',  'itch', 'jazz', 'kick', 'lock', 'moss',
+  'numb', 'pack', 'quit', 'risk', 'smog', 'tack', 'vent',  
+  'zoom',  'dust', 'film', 'grew', 'hiss',  'kill',
+  'loud',  'swim',  
+  'bump', 'clad', 'dung', 'flog', 'grim', 'huff',
+  'kilt', 'lint', 'muck', 'puck', 'rung', 'shut', 'tusk', 'wisp'
 ];
 
 cvccWords.forEach((word, index) => {
