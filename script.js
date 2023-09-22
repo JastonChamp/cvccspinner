@@ -2,16 +2,16 @@ const wheel = document.querySelector('.wheel');
 const cvccWords = [
    'bend', 'milk', 'jump', 'sink', 'wind', 'lost', 'sand', 'melt',
   'lamp', 'belt', 'gulp', 'band', 'limp', 'pink', 'wing',
-  'pond', 'rust', 'vest',  'bolt', 'clap', 'drag', 'fist', 'golf',
+  'pond', 'rust', 'vest',  'bolt',  'fist', 'golf',
   'hunt', 'junk', 'kept', 'lend', 'musk', 'nest', 'pint', 'ramp', 
-  'tent', 'wilt',  'zest', 'bulk', 'chip', 'dock', 'funk', 'grip',
+  'tent', 'wilt',  'zest', 'bulk', 'chip', 'dock', 'funk', 
   'hulk', 'inch', 'jolt',  'lump', 'mint', 'neck',  'pump',
-  'rack', 'slip', 'tick', 'volt',  'yolk', 'clot',
-  'drip', 'flap', 'grid',  'itch', 'jazz', 'kick', 'lock', 'moss',
+  'rack', ' 'tick', 'volt',  'yolk', 
+    'itch', 'jazz',  'lock', 
   'numb', 'pack', 'quit', 'risk', 'smog', 'tack', 'vent',  
-  'zoom',  'dust', 'film', 'grew', 'hiss',  'kill',
-  'loud',  'swim',  
-  'bump', 'clad', 'dung', 'flog', 'grim', 'huff',
+    'dust', 'film', 'grew', 'hiss',  'kill',
+    'swim',  
+  'bump', ' 'dung',   'huff',
   'kilt', 'lint', 'muck', 'puck', 'rung', 'shut', 'tusk', 'wisp'
 ];
 
