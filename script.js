@@ -1,28 +1,37 @@
 const wheel = document.querySelector('.wheel');
 const ccvcWords = [
-  'brag', 'clam', 'drop', 'flag', 'grip', 
-  'plan', 'slip', 'trap', 'blot', 'clap',
-  'drum', 'flap', 'glum', 'plug',
-  'skim', 'twin',  'brim', 'clot', 'drip',
-  'frog', 'swim', 
-   'blip', 'chip',  'twig',
-  'blab', 'clod', 'flit', 'grit',  'plot', 'scam',
-  'trim', 'bran', 'chop', 'drag', 'flop', 'glim', 
-  'prod', 'slam', 'twit', 
-  'swan', 'sled', 'swig', 'slug',  'slab', 'swop', 'slop', 'swat',
-  'swot', 'brat', 'clad',  'flog', 'grub', 
+  'bend', 'milk', 'jump', 'sink', 'wind', 
+  'lost', 'sand', 'melt', 'lamp', 'belt',
+  'pink', 'limp', 'band', 'gulp',
+  'wing', 'pond',  'rust', 'vest', 'bolt',
+  'fist', 'golf', 
+   'hunt', 'junk',  'kept',
+  'lend', 'musk', 'pint', 'tent',  'ramp', 'wilt',
+  'zest', 'bulk', 'dock', 'funk', 'hulk', 'inch', 
+  'mint', 'lump', 'jolt', 
+  'neck', 'pump', 'rack', 'tick',  'volt', 'yolk', 'numb', 'quilt',
+  'dust', 'vent', 'film',  'bump', 'tack', 
    'plum',  'spit', 'trot',  'bloc', 
-  'plop', 
-  'spin', 
-'scum', 
-  'blow', 'claw',  'grit', 
-  'plug',  'skim', 'twin', 
+ 
 ];
 
 ccvcWords.forEach((word, index) => {
   const slot = document.createElement('div');
   slot.className = 'slot';
   slot.textContent = word; // Display the CCVC word
+  slot.style.display = 'none';
+  wheel.appendChild(slot);
+
+   let coloredWord = '';
+  for (let letter of word) {
+    if ('aeiou'.includes(letter)) {
+      coloredWord += `<span class="vowel">${letter}</span>`;
+    } else {
+      coloredWord += letter;
+    }
+  }
+  
+  slot.innerHTML = coloredWord;  // Use innerHTML to insert HTML content
   slot.style.display = 'none';
   wheel.appendChild(slot);
 });
